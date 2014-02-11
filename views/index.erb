@@ -3,7 +3,7 @@
 <head>
     <title>Is it snowing in <%= CITY %>, <%= STATE %>?</title>
     <style type="text/css">
-    body{
+    body {
       background-color: #fff;
       font-family: "Helvetica";
     }
@@ -14,8 +14,8 @@
   <h2><%= @weather.snowing? %></h2>
   <img src="<%= @weather.icon_url %>"/>
   <p>Updated <%= @weather.last_updated %> ago</p>
-  <p>made by <a href="https://twitter.com/invisiblefunnel">danny</a></p>
-  <p><a href="https://github.com/invisiblefunnel/is-it-snowing"><img src="GitHub-Mark-32px.png"></a></p>
+  <p>Made by <a href="https://twitter.com/invisiblefunnel">Danny</a> with the <a href="http://team-charlotte.tumblr.com">Code for America Charlotte</a> team, lovingly redeployed by the <a href="http://teambiglex.tumblr.com">Code for America Lexingteam</a>.</p>
+  <p><a href="https://github.com/lyzidiamond/is-it-snowing"><img src="GitHub-Mark-32px.png"></a></p>
   <pre style="display:none;"><%= JSON.pretty_generate @weather.response %></pre>
 
   <script type="text/javascript">
